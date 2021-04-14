@@ -1,2 +1,2 @@
-# apiispanen-apiispanen.github.io
+# apiispanen.github.io
 My Pages Portfolio
