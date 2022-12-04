@@ -1,8 +1,0 @@
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
-
-<ul>
-{% for band in Concert.all %}
-    <li>{{ band.band }}</li>
-{% endfor %}
-</ul>
