@@ -1,17 +1,16 @@
-<!-- {% load static %} -->
+{% load static %}
 
 <link rel="shortcut icon" href="#">
-<link rel="stylesheet" type="text/css" href="polls/static/polls/style.css" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="polls/static/polls/core.js" type="text/javascript"></script>
+<script src="{% static 'polls/core.js' %}" type="text/javascript"></script>
 
 <html>
 <!-- HELLO -->
 <body class="fade-in">
 <div scrolls scrolls-duration="1200" class="page" id="section1">
 <h1 class="fade-in">Hello, my name is Drew.</h1>
-<!-- {% load static %}  -->
-<img src="polls/static/polls/images/awkward-drew.jpg" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
+{% load static %} <img src="{% static "polls/images/awkward-drew.jpg" %}" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
 <p class="tiny slow-fade">(My friends call me Andrew, Drew, Piispo, or even Doug.)</p>
 <p>I’m a scrappy, energetic, slightly-scatterbrained entrepreneur from Boston, MA who now lives close to Central PA. 
     I'm a graduate of Babson College, Class of 2018 and an incoming graduate student at UC Berkeley where I'll be working part-time towards a Masters in Data Science.</p>
@@ -68,8 +67,7 @@
 <div scrolls scrolls-duration="1200" class="page">
 <h2>When I am out of working-mode, I enjoy all things music </h2>
 
-<!-- {% load static %}  -->
-<img src="polls/static/polls/images/jlr.jpeg" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
+{% load static %} <img src="{% static "polls/images/jlr.jpeg" %}" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
 <p><b class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/">Jimmy Laser and the Robots</b></p>
 <p class="show-more" value="concerts">Concerts I've attended</p>
 
@@ -211,5 +209,5 @@
 <p class="tiny">This website was built with Python's Django library.</p>
 
 </body>
-<script src="polls/static/scrolls-main/dist/scrolls.min.js" type="text/javascript"></script>
+<script src="{% static '/scrolls-main//dist/scrolls.min.js' %}" type="text/javascript"></script>
 </html>
