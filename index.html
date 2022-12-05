@@ -2,8 +2,10 @@
 
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="static/style.css" />
+<link rel="stylesheet" href="static/Adelle/Adelle_Reg.otf">
 <script src="static/jquery.js" type="text/javascript"></script>
 <script src="static/core.js" type="text/javascript"></script>
+
 
 <html>
 <!-- HELLO -->
@@ -11,7 +13,7 @@
 <div scrolls scrolls-duration="1200" class="page" id="section1">
 <h1 class="fade-in">Hello, my name is Drew.</h1>
 <!-- {% load static %}  -->
-<img src="static/images/awkward-drew.jpg" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
+<img src="static/images/awkward-drew.jpg" class = "fade-out" value="https://www.linkedin.com/in/drew-piispanen-a22511a8/"/><br>
 <p class="tiny slow-fade">(My friends call me Andrew, Drew, Piispo, or even Doug.)</p>
 <p>I’m a scrappy, energetic, slightly-scatterbrained entrepreneur from Boston, MA who now lives close to Central PA. 
     I'm a graduate of Babson College, Class of 2018 and an incoming graduate student at UC Berkeley where I'll be working part-time towards a Masters in Data Science.</p>
@@ -20,60 +22,85 @@
 <!-- COMPANIES -->
 <div scrolls scrolls-duration="1200" class="page" id="section2">
 <h2>I’ve helped to start a couple of companies in my time on this planet – one of which was a big old failure.</h2> 
-<p><b class = "fade-out" value="http://directmachines.com">Direct Machines</b><b class = "fade-out" value="pruve">Pruve</b></p>
+<p class="tiny slow-fade">(I regret nothing.)</p>
+<p class = "fade-out" value="http://directmachines.com">Direct Machines</p><p class = "fade-out" value="https://www.babson.edu/entrepreneurship-center/startup-incubation/john-e-and-alice-l-butler-launch-pad/fast-track-cohort/2020-fast-track-cohort-ventures/#pruve">Pruve</p>
 </div>
 
 <!-- CAREER / JOBS -->
 <div scrolls scrolls-duration="1200" class="page">
 <h2>But as they say - with failure, comes success. As a result, I‘ve kept up a decent range of places that I've worked.</h2>
-<ul>
 <p class="tiny slow-fade">(Internships included AIG, Performance Motion Devices, Accorin and shoveling rat dung out of attics in high school)</p>
-<li><b>2018</b>Graduated Babson. Became a Data Analyst Consultant for Skipping Stone</li>
-<li><b>2020</b>Left SS to work on a family business that grew into Direct Machines</li>
-<li><b>2021</b>Left DM to join Wayfair in Partner Operations</li>
-<li><b>2022</b>Left Wayfair to run Cann's supply chain </li>
+<ul class="achievements">
+<li><div class="year">2018</div><div class="description">Graduated Babson. Became a Data Analyst Consultant for Skipping Stone</div></li>
+<li><div class="year">2020</div><div class="description">Left SS to work on a family business that grew into Direct Machines</div></li>
+<li><div class="year">2021</div><div class="description">Shifted from DM to join Wayfair in Partner Operations</div></li>
+<li><div class="year">2022</div><div class="description">Wayfair to run Cann's supply chain</div></li>
 </ul>
 </div>
 
-<!-- SKILLS AND CERTS -->
-<div class="page">
-    <p class="show-more" value="skills">Skills</p>
-    
-    <div id="skills" style="display:none">
-    <ul id="skills">
-        <li>Python<p class="tiny">Please, ask me about Webscraping</p></li>
-        <li>Tableau<p class="tiny">Drag and drop analytics? Done.</p></li>
-        <li>SQL <p class="tiny">Wordpress DBs were my specialty</p></li>
-        <li>PHP <p class="tiny">Ahem, again: Wordpress DBs were my specialty</p></li>
-        <li>HTML/CSS<p class="tiny">I think the site should act as some proof</p></li>
-        <li>Javascript <p class="tiny">How do you think I integrated the fade effects?</p></li>
-        <li>Wordpress<p class="tiny">Custom plugins and databases are... tricky.</p></li>
-        <li>Excel <p class="tiny">You really think I went to business school and didn't excel in this? (pun intended)</p></li>
-        <li>Hubspot Certified</li>
-        <li>Adwords Certified</li>
-    </ul>
-    </div>
-    </div>
 
 <!-- PERSONAL PROJECTS -->
 <div scrolls scrolls-duration="1200" class="page">
 <h2>While I keep myself busy, on the weekends I like to pursue personal projects.</h2>
-<p><b class = "fade-down" value="https://medium.com/@andrewpiispanen/solutions-to-a-broken-mind-200ea7ac1598">Biohacker</b><b class = "fade-down" value="pruve">Berkeley Bootcamp</b></p>
+
+<p class="show-more" value="biohacker">Biohacker Project</p>
+<div id="biohacker" class="hidden">
+<p class="tiny">A mood tracker, logging my mood daily and combining it with phone and personal data. <br>(Turns out I'm pretty cranky most days)</p>
+<p class = "fade-out" value="https://github.com/apiispanen/biohacker">Github Repo</p>
+<p class = "fade-out" value="https://apiispanen-biohacker-stream-gtgyag.streamlitapp.com/">Streamlit Webapp</p>
+<p class = "fade-out" value="https://medium.com/@andrewpiispanen/solutions-to-a-broken-mind-200ea7ac1598">Medium Post</p>
 </div>
 
+<p class = "show-more" value="coding">Berkeley Bootcamp Repos</p>
+<div id="coding" class="hidden">
+<p class="tiny">Although I'm now attending grad school there for 2 years, I did have a lot of cool projects that I undertook while at their 6-month bootcamp.</p>
+<p class = "fade-out" value="https://github.com/erinrkahn/final_project">Major Wildfire Predictors (Final Project)</p>
+<p class = "fade-out" value="https://github.com/apiispanen/Neural_Network_Charity_Analysis">Neural Network Analysis</p>
+<p class = "fade-out" value="https://github.com/apiispanen/MechaCar_Statistical_Analysis">Linear Regression Modeling</p>
+</div>
+
+
+<p class="show-more" value="skills">My General Skills</p><p class="tiny">(Click to see list)</p>
+
+<!-- SKILLS AND CERTS -->    
+<div id="skills" class="hidden">
+<ul id="skills" class="achievements">
+    <li>Python<p class="tiny">Please, ask me about Webscraping.</p></li>
+    <li>Tableau<p class="tiny">Drag and drop analytics? Done.</p></li>
+    <li>SQL <p class="tiny">Wordpress DBs were my specialty.</p></li>
+    <li>PHP <p class="tiny">Ahem, again: Wordpress DBs were my specialty.</p></li>
+    <li>HTML/CSS<p class="tiny">I think the site should act as some proof.</p></li>
+    <li>Javascript <p class="tiny">How do you think I integrated the fade effects?</p></li>
+    <li>Wordpress<p class="tiny">Custom plugins and databases are... tricky.</p></li>
+    <li>Magento<p class="tiny">See<a href="https://directmachines.com/" target="_blank">Direct Machines</a>for this maddess.</p></li>
+    <li>Excel <p class="tiny">You really think I went to business school and didn't excel in this? (pun intended)</p></li>
+    <li>Hubspot Certified<p class="tiny">Issued in March 2018 - which means it's totally expired.</p></li>
+    <li>Adwords Certified<p class="tiny">Issued in November 2017 - definitely expired by now.</p></li>
+</ul>
+<p class="tiny">Disclaimer: Most of this was self-taught; any terms and names may not be known by my dumb head.</p>
+</div>
+</div>
 
 
 
 <!-- INTERESTS / HOBBIES -->
 <div scrolls scrolls-duration="1200" class="page">
 <h2>When I am out of working-mode, I enjoy all things music </h2>
-
 <!-- {% load static %}  -->
-<img src="static/images/jlr.jpeg" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
-<p><b class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/">Jimmy Laser and the Robots</b></p>
-<p class="show-more" value="concerts">Concerts I've attended</p>
 
-<div id="concerts" style="display:none">
+<p class="show-more" value="band">I play In a band</p>
+<div id="band" class="hidden">
+    <img src="static/images/jlr.jpeg" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
+    <p><b class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/">Jimmy Laser and the Robots</b></p><p class="tiny">I play drums and sing. Phil Collins would laugh if he watched me play, however.</p>
+
+</div>
+
+
+
+<p class="show-more" value="concerts">I like attending Concerts</p>
+
+<div id="concerts" class="hidden">
+    <p>List of Concerts I've attended:</p>
     <ul class="tiny">
     
         <li>2 Chainz</li>
@@ -148,9 +175,9 @@
     
     </ul>
 </div>
-    <p class="tiny fade-in">(Makes for great small talk)</p>
-<p class="show-more" value="countries">Countries I've visited</p>
-<div id="countries" style="display:none">
+<p class="show-more" value="countries">Travel is fun, too</p>
+<div id="countries" class="hidden">
+    <p>List of Countries I've been to:</p>
     <ul class="tiny">
     <li>Bermuda</li>
     <li>Canada</li>
@@ -169,12 +196,12 @@
     <li>Spain</li>
     <li>Switzerland</li>
     <li>United States</li>
-    </ul>
-    <p class="tiny fade-in">(Basically, I have a lot to see in both the Easternand the Southern Hempispheres)</p>
+    </ul><br>
+    <p class="tiny fade-in">(Basically, I have a lot to see in both the Eastern and the Southern Hempispheres)</p>
 </div>
 
-<p class="show-more" value="people">People who care about me</p>
-<div id="people" style="display:none">
+<p class="show-more" value="people">Kesha songs I like</p>
+<div id="people" class="hidden">
     <ul class="tiny">
         <li></li>
         <li></li>
@@ -200,15 +227,28 @@
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ul>
 </div>
+<p class="tiny fade-in"><br>(Makes for great small talk - click one to learn more)</p>
+
+</div>
+<br><br><br><br>
+
+
 
 <!-- LEARN MORE -->
-<div scrolls scrolls-duration="1200">
+<div scrolls scrolls-duration="1200" class="footer">
 <h2>Questions?</h2>
 <a href="mailto:appiispanen@gmail.com">Email</a>|<a href="https://www.linkedin.com/in/drew-piispanen-a22511a8/" target="none">LinkedIn</a>|<a href="https://github.com/apiispanen" target="none">Github</a>|<a href="https://drive.google.com/file/d/1hdacUEL82KShY3KHuwjxAqOtRb61iLHk/view?usp=sharing" target="none">Resume</a>
 </div>
-<p class="tiny">This website was built with Python's Django library.</p>
 
 </body>
 <script src="static/scrolls-main/dist/scrolls.min.js" type="text/javascript"></script>
