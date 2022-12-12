@@ -5,12 +5,12 @@
 <link rel="stylesheet" href="static/Adelle/Adelle_Reg.otf">
 <script src="static/jquery.js" type="text/javascript"></script>
 <script src="static/core.js" type="text/javascript"></script>
-
+<script src="static/jquery-ui.js" type="text/javascript"></script>
 
 <html>
 <!-- HELLO -->
 <body class="fade-in">
-<div scrolls scrolls-duration="1200" class="page" id="section1">
+<div scrolls scrolls-duration="1200" class="page section custom-full1" id="section1">
 <h1 class="fade-in">Hello, my name is Drew.</h1>
 <!-- {% load static %}  -->
 <img src="static/images/awkward-drew.jpg" class = "fade-out" value="https://www.linkedin.com/in/drew-piispanen-a22511a8/"/><br>
@@ -20,14 +20,14 @@
 </div>
 
 <!-- COMPANIES -->
-<div scrolls scrolls-duration="1200" class="page" id="section2">
+<div scrolls scrolls-duration="1200" class="page section custom-full1" id="section2">
 <h2>I’ve helped to start a couple of companies in my time on this planet – one of which was a big old failure.</h2> 
 <p class="tiny slow-fade">(I regret nothing.)</p>
 <p class = "fade-out" value="http://directmachines.com">Direct Machines</p><p class = "fade-out" value="https://www.babson.edu/entrepreneurship-center/startup-incubation/john-e-and-alice-l-butler-launch-pad/fast-track-cohort/2020-fast-track-cohort-ventures/#pruve">Pruve</p>
 </div>
 
 <!-- CAREER / JOBS -->
-<div scrolls scrolls-duration="1200" class="page">
+<div scrolls scrolls-duration="1200" class="page section custom-full1" id="section3">
 <h2>But as they say - with failure, comes success. As a result, I‘ve kept up a decent range of places that I've worked.</h2>
 <p class="tiny slow-fade">(Internships included AIG, Performance Motion Devices, Accorin and shoveling rat dung out of attics in high school)</p>
 <ul class="achievements">
@@ -40,7 +40,7 @@
 
 
 <!-- PERSONAL PROJECTS -->
-<div scrolls scrolls-duration="1200" class="page">
+<div scrolls scrolls-duration="1200" class="page section custom-full1" id="section4">
 <h2>While I keep myself busy, on the weekends I like to pursue personal projects.</h2>
 
 <p class="show-more" value="biohacker">Biohacker Project</p>
@@ -84,14 +84,14 @@
 
 
 <!-- INTERESTS / HOBBIES -->
-<div scrolls scrolls-duration="1200" class="page">
+<div scrolls scrolls-duration="1200" class="page section custom-full1" id="section5">
 <h2>When I am out of working-mode, I enjoy all things music </h2>
 <!-- {% load static %}  -->
 
 <p class="show-more" value="band">I play In a band</p>
 <div id="band" class="hidden">
     <img src="static/images/jlr.jpeg" class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/"/>
-    <p><b class = "fade-out" value="https://www.instagram.com/jimmylazerandtherobots/">Jimmy Laser and the Robots</b></p><p class="tiny">I play drums and sing. Phil Collins would laugh if he watched me play, however.</p>
+    <p><b class = "fade-out" value="https://youtu.be/w1fXXPJ9o0w?t=1046">Jimmy Laser and the Robots</b></p><p class="tiny">I play drums and sing... But Phil Collins would laugh if he watched me play.</p>
 
 </div>
 
@@ -102,12 +102,13 @@
 <div id="concerts" class="hidden">
     <p>List of Concerts I've attended:</p>
     <ul class="tiny">
-    
         <li>2 Chainz</li>
+        <li>A.L.O.</li>
         <li>Andrew McMahon and the Wilderness</li>
         <li>Arctic Monkeys</li>
         <li>Avett Brothers</li>
         <li>Bassnectar</li>
+        <li>Beach House</li>
         <li>Big Data</li>
         <li>Big Sean</li>
         <li>Blink-182</li>
@@ -118,12 +119,17 @@
         <li>Citizen Cope</li>
         <li>City and Colour</li>
         <li>Coldplay 2x</li>
+        <li>Collective Soul</li>
+        <li>Crash Kings</li>
         <li>Dave Matthews Band</li>
         <li>Dispatch</li>
+        <li>Elbow</li>
         <li>Fitz and the Tantrums</li>
         <li>Fleet Foxes 2x</li>
         <li>Foo Fighters 2x</li>
         <li>Foster the People</li>
+        <li>G. Love and the Special Sauce</li>
+        <li>Gin Blossoms</li>
         <li>Green Day</li>
         <li>Grouplove</li>
         <li>Guster</li>
@@ -132,8 +138,10 @@
         <li>Imagine Dragons</li>
         <li>Jack Johnson 2x</li>
         <li>Joe Russo's Almost Dead</li>
+        <li>John Williams</li>
         <li>Jon Bellion</li>
         <li>Kygo</li>
+        <li>Lawrence</li>
         <li>Linkin Park</li>
         <li>Live</li>
         <li>Manchester Orchestra</li>
@@ -147,6 +155,7 @@
         <li>Oliver Heldens</li>
         <li>Outkast</li>
         <li>Paul McCartney</li>
+        <li>Pendulum</li>
         <li>Phil Collins</li>
         <li>Pigeons Playing Ping Pong</li>
         <li>Pitbull</li>
@@ -161,6 +170,7 @@
         <li>The Fools</li>
         <li>The Killers</li>
         <li>The Mighty Mighty Bosstones</li>
+        <li>The Vaccines</li>
         <li>The White Panda</li>
         <li>They Might be Giants</li>
         <li>Third Eye Blind</li>
@@ -169,11 +179,9 @@
         <li>Weezer</li>
         <li>Zach Brown Band</li>
         <li>Zedd 2x</li>
-        
     
-    
-    
-    </ul>
+    </ul><br><br>
+    <p class="tiny">First concert I saw was at the age of 12 - Coldplay.</p>
 </div>
 <p class="show-more" value="countries">Travel is fun, too</p>
 <div id="countries" class="hidden">
@@ -196,11 +204,12 @@
     <li>Spain</li>
     <li>Switzerland</li>
     <li>United States</li>
+    <li>Vatican City</li>
     </ul><br>
     <p class="tiny fade-in">(Basically, I have a lot to see in both the Eastern and the Southern Hempispheres)</p>
 </div>
 
-<p class="show-more" value="people">Kesha songs I like</p>
+<p class="show-more" value="people">Here are Kesha songs I like</p>
 <div id="people" class="hidden">
     <ul class="tiny">
         <li></li>
@@ -240,15 +249,20 @@
 <p class="tiny fade-in"><br>(Makes for great small talk - click one to learn more)</p>
 
 </div>
-<br><br><br><br>
-
 
 
 <!-- LEARN MORE -->
-<div scrolls scrolls-duration="1200" class="footer">
-<h2>Questions?</h2>
+<div scrolls scrolls-duration="1200" class="section custom-full1" id="section6">
+
+    <img src="static/images/drew_companies.png" class = "about"/>
+
+    <div class="footer">
+    <h2>Questions?</h2>
 <a href="mailto:appiispanen@gmail.com">Email</a>|<a href="https://www.linkedin.com/in/drew-piispanen-a22511a8/" target="none">LinkedIn</a>|<a href="https://github.com/apiispanen" target="none">Github</a>|<a href="https://drive.google.com/file/d/1hdacUEL82KShY3KHuwjxAqOtRb61iLHk/view?usp=sharing" target="none">Resume</a>
 </div>
+</div>
+
+
 
 </body>
 <script src="static/scrolls-main/dist/scrolls.min.js" type="text/javascript"></script>
