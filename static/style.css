@@ -106,6 +106,10 @@ ul *{
   height:80px
 }
 
+.hidden{
+  padding-bottom: 60px;
+}
+
 .achievements{
   padding-bottom:00px;
   text-align: center;
@@ -116,7 +120,7 @@ ul *{
   margin-left:10%;
 }
 .achievements li p.tiny{
-width:60px;
+width:60%;
 text-align: right;
 padding-left:20px
 }
